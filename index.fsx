@@ -87,7 +87,7 @@ If the interactive extension does not work, please file an issue and we will try
 
 A possible fix for this is the inclusion of Dotnet.Interactive preview package sources. To use these, add the following lines before referencning Plotly.NET.Interactive:
 
-```fsharp
+```
 #i "nuget:https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet5/nuget/v3/index.json"
 #i "nuget:https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-tools/nuget/v3/index.json"
 ```
@@ -149,29 +149,29 @@ myFirstChart
 |> Chart.Show
 (**
 Should render this chart in your brower:
-<div id="cb048400-f595-46e7-956b-fb55629223b7" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="ea96b7d9-fe7c-4565-8dbc-b8a334802332" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script type="text/javascript">
 
-            var renderPlotly_cb048400f59546e7956bfb55629223b7 = function() {
+            var renderPlotly_ea96b7d9fe7c45658dbcb8a334802332 = function() {
             var fsharpPlotlyRequire = requirejs.config({context:'fsharp-plotly',paths:{plotly:'https://cdn.plot.ly/plotly-latest.min'}}) || require;
             fsharpPlotlyRequire(['plotly'], function(Plotly) {
 
             var data = [{"type":"scatter","x":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0],"y":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0],"mode":"markers","marker":{}}];
             var layout = {};
             var config = {};
-            Plotly.newPlot('cb048400-f595-46e7-956b-fb55629223b7', data, layout, config);
+            Plotly.newPlot('ea96b7d9-fe7c-4565-8dbc-b8a334802332', data, layout, config);
 });
             };
             if ((typeof(requirejs) !==  typeof(Function)) || (typeof(requirejs.config) !== typeof(Function))) {
                 var script = document.createElement("script");
                 script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js");
                 script.onload = function(){
-                    renderPlotly_cb048400f59546e7956bfb55629223b7();
+                    renderPlotly_ea96b7d9fe7c45658dbcb8a334802332();
                 };
                 document.getElementsByTagName("head")[0].appendChild(script);
             }
             else {
-                renderPlotly_cb048400f59546e7956bfb55629223b7();
+                renderPlotly_ea96b7d9fe7c45658dbcb8a334802332();
             }
 </script>
 
@@ -180,29 +180,29 @@ myFirstStyledChart
 |> Chart.Show
 (**
 And here is what happened after applying the styles from above:
-<div id="cc3761ab-c679-4d03-824a-da79e5fac573" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="c0decb96-3ea5-4262-8d76-a4c60c01355d" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script type="text/javascript">
 
-            var renderPlotly_cc3761abc6794d03824ada79e5fac573 = function() {
+            var renderPlotly_c0decb963ea542628d76a4c60c01355d = function() {
             var fsharpPlotlyRequire = requirejs.config({context:'fsharp-plotly',paths:{plotly:'https://cdn.plot.ly/plotly-latest.min'}}) || require;
             fsharpPlotlyRequire(['plotly'], function(Plotly) {
 
             var data = [{"type":"scatter","x":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0],"y":[0.0,1.0,2.0,3.0,4.0,5.0,6.0,7.0,8.0,9.0,10.0],"mode":"markers","marker":{}}];
             var layout = {"title":"Hello world!","xaxis":{"title":"xAxis","showgrid":false},"yaxis":{"title":"yAxis","showgrid":false}};
             var config = {};
-            Plotly.newPlot('cc3761ab-c679-4d03-824a-da79e5fac573', data, layout, config);
+            Plotly.newPlot('c0decb96-3ea5-4262-8d76-a4c60c01355d', data, layout, config);
 });
             };
             if ((typeof(requirejs) !==  typeof(Function)) || (typeof(requirejs.config) !== typeof(Function))) {
                 var script = document.createElement("script");
                 script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js");
                 script.onload = function(){
-                    renderPlotly_cc3761abc6794d03824ada79e5fac573();
+                    renderPlotly_c0decb963ea542628d76a4c60c01355d();
                 };
                 document.getElementsByTagName("head")[0].appendChild(script);
             }
             else {
-                renderPlotly_cc3761abc6794d03824ada79e5fac573();
+                renderPlotly_c0decb963ea542628d76a4c60c01355d();
             }
 </script>
 

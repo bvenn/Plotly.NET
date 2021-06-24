@@ -6,6 +6,12 @@
     <title>Violin plots</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Timo Mühlhaus, Kevin Schneider, F# open source contributors">
+    
+    <!--Opengraph properties (https://ogp.me/)-->
+    <meta property="og:title" content="Violin plots" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Plotly.NET" />
+    
     <link rel="shortcut icon" type="image/x-icon" href="https://plotly.net//img/favicon.ico">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -177,13 +183,13 @@
   </a>
 </li>             
 <li class="nav-item">
-  <a class="nav-link" href="https://plotly.net/4_4_2d-histograms.html">
-    2D Histograms
+  <a class="nav-link" href="https://plotly.net/4_3_contour-plots.html">
+    Contour plots
   </a>
 </li>             
 <li class="nav-item">
-  <a class="nav-link" href="https://plotly.net/4_3_contour-plots.html">
-    Contour plots
+  <a class="nav-link" href="https://plotly.net/4_4_2d-histograms.html">
+    2D Histograms
   </a>
 </li>             
 <li class="nav-item">
@@ -205,6 +211,16 @@
 <li class="nav-item">
   <a class="nav-link" href="https://plotly.net/6_0_candlestick.html">
     Candlestick Charts
+  </a>
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="https://plotly.net/6_1_funnel.html">
+    Funnel Charts
+  </a>
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="https://plotly.net/6_2_funnel_area.html">
+    FunnelArea Charts
   </a>
 </li>             
 <li class="nav-header">
@@ -274,29 +290,29 @@ data at different values.</p>
         <span class="fn">Points</span><span class="o">=</span><span onmouseout="hideTip(event, 'fs8', 10)" onmouseover="showTip(event, 'fs8', 10)" class="m">StyleParam</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs9', 11)" onmouseover="showTip(event, 'fs9', 11)" class="rt">Jitterpoints</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs10', 12)" onmouseover="showTip(event, 'fs10', 12)" class="id">All</span>
     <span class="pn">)</span>
 </code></pre>
-<div id="888cdbaf-33b0-4796-a03f-b08edce1d7e8" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="9898d169-7276-4c6f-8d04-424fe2e3197a" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script type="text/javascript">
 
-            var renderPlotly_888cdbaf33b04796a03fb08edce1d7e8 = function() {
+            var renderPlotly_9898d16972764c6f8d04424fe2e3197a = function() {
             var fsharpPlotlyRequire = requirejs.config({context:'fsharp-plotly',paths:{plotly:'https://cdn.plot.ly/plotly-latest.min'}}) || require;
             fsharpPlotlyRequire(['plotly'], function(Plotly) {
 
             var data = [{"type":"violin","y":[2.0,1.5,5.0,1.5,3.0,2.5,2.5,1.5,3.5,1.0],"x":["bin1","bin2","bin1","bin2","bin1","bin2","bin1","bin1","bin2","bin1"],"points":"all","marker":{}}];
             var layout = {};
             var config = {};
-            Plotly.newPlot('888cdbaf-33b0-4796-a03f-b08edce1d7e8', data, layout, config);
+            Plotly.newPlot('9898d169-7276-4c6f-8d04-424fe2e3197a', data, layout, config);
 });
             };
             if ((typeof(requirejs) !==  typeof(Function)) || (typeof(requirejs.config) !== typeof(Function))) {
                 var script = document.createElement("script");
                 script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js");
                 script.onload = function(){
-                    renderPlotly_888cdbaf33b04796a03fb08edce1d7e8();
+                    renderPlotly_9898d16972764c6f8d04424fe2e3197a();
                 };
                 document.getElementsByTagName("head")[0].appendChild(script);
             }
             else {
-                renderPlotly_888cdbaf33b04796a03fb08edce1d7e8();
+                renderPlotly_9898d16972764c6f8d04424fe2e3197a();
             }
 </script>
 
@@ -310,29 +326,29 @@ data at different values.</p>
         <span onmouseout="hideTip(event, 'fs16', 27)" onmouseover="showTip(event, 'fs16', 27)" class="fn">Meanline</span><span class="o">=</span><span onmouseout="hideTip(event, 'fs16', 28)" onmouseover="showTip(event, 'fs16', 28)" class="rt">Meanline</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs17', 29)" onmouseover="showTip(event, 'fs17', 29)" class="id">init</span><span class="pn">(</span><span class="fn">Visible</span><span class="o">=</span><span class="k">true</span><span class="pn">)</span>
     <span class="pn">)</span>
 </code></pre>
-<div id="f250fbbd-c9cd-4e52-bc17-b5c8410421c6" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="49097d86-50c0-4782-8110-ddfcbb404e1c" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script type="text/javascript">
 
-            var renderPlotly_f250fbbdc9cd4e52bc17b5c8410421c6 = function() {
+            var renderPlotly_49097d8650c047828110ddfcbb404e1c = function() {
             var fsharpPlotlyRequire = requirejs.config({context:'fsharp-plotly',paths:{plotly:'https://cdn.plot.ly/plotly-latest.min'}}) || require;
             fsharpPlotlyRequire(['plotly'], function(Plotly) {
 
             var data = [{"type":"violin","y":["bin1","bin2","bin1","bin2","bin1","bin2","bin1","bin1","bin2","bin1"],"x":[2.0,1.5,5.0,1.5,3.0,2.5,2.5,1.5,3.5,1.0],"points":"all","jitter":0.1,"orientation":"h","meanline":{"visible":true},"marker":{}}];
             var layout = {};
             var config = {};
-            Plotly.newPlot('f250fbbd-c9cd-4e52-bc17-b5c8410421c6', data, layout, config);
+            Plotly.newPlot('49097d86-50c0-4782-8110-ddfcbb404e1c', data, layout, config);
 });
             };
             if ((typeof(requirejs) !==  typeof(Function)) || (typeof(requirejs.config) !== typeof(Function))) {
                 var script = document.createElement("script");
                 script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js");
                 script.onload = function(){
-                    renderPlotly_f250fbbdc9cd4e52bc17b5c8410421c6();
+                    renderPlotly_49097d8650c047828110ddfcbb404e1c();
                 };
                 document.getElementsByTagName("head")[0].appendChild(script);
             }
             else {
-                renderPlotly_f250fbbdc9cd4e52bc17b5c8410421c6();
+                renderPlotly_49097d8650c047828110ddfcbb404e1c();
             }
 </script>
 
@@ -346,29 +362,29 @@ data at different values.</p>
     <span class="pn">]</span>
     <span class="o">|&gt;</span> <span onmouseout="hideTip(event, 'fs6', 47)" onmouseover="showTip(event, 'fs6', 47)" class="rt">Chart</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs20', 48)" onmouseover="showTip(event, 'fs20', 48)" class="id">Combine</span>
 </code></pre>
-<div id="3651da45-6f5c-45ea-9a6d-9e6c6fc7f644" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
+<div id="939c6356-50e4-4225-b640-5cf13c750f46" style="width: 600px; height: 600px;"><!-- Plotly chart will be drawn inside this DIV --></div>
 <script type="text/javascript">
 
-            var renderPlotly_3651da456f5c45ea9a6d9e6c6fc7f644 = function() {
+            var renderPlotly_939c635650e44225b6405cf13c750f46 = function() {
             var fsharpPlotlyRequire = requirejs.config({context:'fsharp-plotly',paths:{plotly:'https://cdn.plot.ly/plotly-latest.min'}}) || require;
             fsharpPlotlyRequire(['plotly'], function(Plotly) {
 
             var data = [{"type":"violin","y":[2.0,1.5,5.0,1.5,3.0,2.5,2.5,1.5,3.5,1.0],"x":"y","points":"all","jitter":0.1,"name":"bin1","marker":{}},{"type":"violin","y":[2.0,1.5,5.0,1.5,2.0,2.5,2.1,2.5,1.5,1.0,2.0,1.5,5.0,1.5,3.0,2.5,2.5,1.5,3.5,1.0],"x":"y'","points":"all","jitter":0.1,"name":"bin2","marker":{}}];
             var layout = {};
             var config = {};
-            Plotly.newPlot('3651da45-6f5c-45ea-9a6d-9e6c6fc7f644', data, layout, config);
+            Plotly.newPlot('939c6356-50e4-4225-b640-5cf13c750f46', data, layout, config);
 });
             };
             if ((typeof(requirejs) !==  typeof(Function)) || (typeof(requirejs.config) !== typeof(Function))) {
                 var script = document.createElement("script");
                 script.setAttribute("src", "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js");
                 script.onload = function(){
-                    renderPlotly_3651da456f5c45ea9a6d9e6c6fc7f644();
+                    renderPlotly_939c635650e44225b6405cf13c750f46();
                 };
                 document.getElementsByTagName("head")[0].appendChild(script);
             }
             else {
-                renderPlotly_3651da456f5c45ea9a6d9e6c6fc7f644();
+                renderPlotly_939c635650e44225b6405cf13c750f46();
             }
 </script>
 
@@ -381,7 +397,7 @@ data at different values.</p>
 <div class="fsdocs-tip" id="fs3">val y : float list</div>
 <div class="fsdocs-tip" id="fs4">val x : string list</div>
 <div class="fsdocs-tip" id="fs5">val violin1 : GenericChart.GenericChart</div>
-<div class="fsdocs-tip" id="fs6">type Chart =<br />&#160;&#160;static member Area : x:seq&lt;#IConvertible&gt; * y:seq&lt;#IConvertible&gt; * ?Name:string * ?ShowMarkers:bool * ?Showlegend:bool * ?MarkerSymbol:Symbol * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Dash:DrawingStyle * ?Width:float -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Bar : keys:seq&lt;#IConvertible&gt; * values:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Marker:Marker -&gt; GenericChart + 1 overload<br />&#160;&#160;static member BoxPlot : ?x:&#39;a0 * ?y:&#39;a1 * ?Name:string * ?Showlegend:bool * ?Color:string * ?Fillcolor:&#39;a2 * ?Opacity:float * ?Whiskerwidth:&#39;a3 * ?Boxpoints:Boxpoints * ?Boxmean:BoxMean * ?Jitter:&#39;a4 * ?Pointpos:&#39;a5 * ?Orientation:Orientation * ?Marker:Marker * ?Line:Line * ?Alignmentgroup:&#39;a6 * ?Offsetgroup:&#39;a7 * ?Notched:bool * ?NotchWidth:float * ?QuartileMethod:QuartileMethod -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Bubble : x:seq&lt;#IConvertible&gt; * y:seq&lt;#IConvertible&gt; * sizes:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?MarkerSymbol:Symbol * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?StackGroup:string * ?Orientation:Orientation * ?GroupNorm:GroupNorm * ?UseWebGL:bool -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Candlestick : open:seq&lt;#IConvertible&gt; * high:seq&lt;#IConvertible&gt; * low:seq&lt;#IConvertible&gt; * close:seq&lt;#IConvertible&gt; * x:seq&lt;#IConvertible&gt; * ?Increasing:Line * ?Decreasing:Line * ?WhiskerWidth:float * ?Line:Line * ?XCalendar:Calendar -&gt; GenericChart + 1 overload<br />&#160;&#160;static member ChoroplethMap : locations:seq&lt;string&gt; * z:seq&lt;#IConvertible&gt; * ?Text:seq&lt;#IConvertible&gt; * ?Locationmode:LocationFormat * ?Autocolorscale:bool * ?Colorscale:Colorscale * ?Colorbar:&#39;a2 * ?Marker:Marker * ?Zmin:&#39;a3 * ?Zmax:&#39;a4 -&gt; GenericChart<br />&#160;&#160;static member Column : keys:seq&lt;#IConvertible&gt; * values:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Marker:Marker -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Contour : data:seq&lt;#seq&lt;&#39;a1&gt;&gt; * ?X:seq&lt;#IConvertible&gt; * ?Y:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Opacity:float * ?Colorscale:Colorscale * ?Showscale:&#39;a4 * ?zSmooth:SmoothAlg * ?Colorbar:&#39;a5 -&gt; GenericChart (requires &#39;a1 :&gt; IConvertible)<br />&#160;&#160;static member Doughnut : values:seq&lt;#IConvertible&gt; * ?Labels:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Colors:seq&lt;string&gt; * ?Hole:float * ?TextPosition:TextPosition * ?TextFont:Font * ?Hoverinfo:string * ?Textinfo:&#39;a2 * ?Opacity:float -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Funnel : x:seq&lt;#IConvertible&gt; * y:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Color:string * ?Line:Line * ?x0:&#39;a3 * ?dX:float * ?y0:&#39;a4 * ?dY:float * ?Width:float * ?Offset:float * ?Orientation:Orientation * ?Alignmentgroup:string * ?Offsetgroup:string * ?Cliponaxis:bool * ?Connector:FunnelConnector * ?Insidetextfont:Font * ?Outsidetextfont:Font -&gt; GenericChart<br />&#160;&#160;...</div>
+<div class="fsdocs-tip" id="fs6">type Chart =<br />&#160;&#160;static member Area : x:seq&lt;#IConvertible&gt; * y:seq&lt;#IConvertible&gt; * ?Name:string * ?ShowMarkers:bool * ?Showlegend:bool * ?MarkerSymbol:Symbol * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Dash:DrawingStyle * ?Width:float -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Bar : keys:seq&lt;#IConvertible&gt; * values:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Marker:Marker -&gt; GenericChart + 1 overload<br />&#160;&#160;static member BoxPlot : ?x:&#39;a0 * ?y:&#39;a1 * ?Name:string * ?Showlegend:bool * ?Color:string * ?Fillcolor:&#39;a2 * ?Opacity:float * ?Whiskerwidth:&#39;a3 * ?Boxpoints:Boxpoints * ?Boxmean:BoxMean * ?Jitter:&#39;a4 * ?Pointpos:&#39;a5 * ?Orientation:Orientation * ?Marker:Marker * ?Line:Line * ?Alignmentgroup:&#39;a6 * ?Offsetgroup:&#39;a7 * ?Notched:bool * ?NotchWidth:float * ?QuartileMethod:QuartileMethod -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Bubble : x:seq&lt;#IConvertible&gt; * y:seq&lt;#IConvertible&gt; * sizes:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?MarkerSymbol:Symbol * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?StackGroup:string * ?Orientation:Orientation * ?GroupNorm:GroupNorm * ?UseWebGL:bool -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Candlestick : open:seq&lt;#IConvertible&gt; * high:seq&lt;#IConvertible&gt; * low:seq&lt;#IConvertible&gt; * close:seq&lt;#IConvertible&gt; * x:seq&lt;#IConvertible&gt; * ?Increasing:Line * ?Decreasing:Line * ?WhiskerWidth:float * ?Line:Line * ?XCalendar:Calendar -&gt; GenericChart + 1 overload<br />&#160;&#160;static member ChoroplethMap : locations:seq&lt;string&gt; * z:seq&lt;#IConvertible&gt; * ?Text:seq&lt;#IConvertible&gt; * ?Locationmode:LocationFormat * ?Autocolorscale:bool * ?Colorscale:Colorscale * ?Colorbar:&#39;a2 * ?Marker:Marker * ?GeoJson:&#39;a3 * ?FeatureIdKey:string * ?Zmin:&#39;a4 * ?Zmax:&#39;a5 -&gt; GenericChart<br />&#160;&#160;static member Column : keys:seq&lt;#IConvertible&gt; * values:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Color:string * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Marker:Marker -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Contour : data:seq&lt;#seq&lt;&#39;a1&gt;&gt; * ?X:seq&lt;#IConvertible&gt; * ?Y:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Opacity:float * ?Colorscale:Colorscale * ?Showscale:&#39;a4 * ?zSmooth:SmoothAlg * ?Colorbar:&#39;a5 -&gt; GenericChart (requires &#39;a1 :&gt; IConvertible)<br />&#160;&#160;static member Doughnut : values:seq&lt;#IConvertible&gt; * ?Labels:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Colors:seq&lt;string&gt; * ?Hole:float * ?TextPosition:TextPosition * ?TextFont:Font * ?Hoverinfo:string * ?Textinfo:&#39;a2 * ?Opacity:float -&gt; GenericChart + 1 overload<br />&#160;&#160;static member Funnel : x:seq&lt;#IConvertible&gt; * y:seq&lt;#IConvertible&gt; * ?Name:string * ?Showlegend:bool * ?Opacity:float * ?Labels:seq&lt;#IConvertible&gt; * ?TextPosition:TextPosition * ?TextFont:Font * ?Color:string * ?Line:Line * ?x0:&#39;a3 * ?dX:float * ?y0:&#39;a4 * ?dY:float * ?Width:float * ?Offset:float * ?Orientation:Orientation * ?Alignmentgroup:string * ?Offsetgroup:string * ?Cliponaxis:bool * ?Connector:FunnelConnector * ?Insidetextfont:Font * ?Outsidetextfont:Font -&gt; GenericChart<br />&#160;&#160;...</div>
 <div class="fsdocs-tip" id="fs7">static member Chart.Violin : xy:seq&lt;&#39;a0 * &#39;a1&gt; * ?Name:string * ?Showlegend:bool * ?Color:string * ?Fillcolor:&#39;a2 * ?Opacity:float * ?Points:StyleParam.Boxpoints * ?Jitter:&#39;a3 * ?Pointpos:&#39;a4 * ?Orientation:StyleParam.Orientation * ?Width:&#39;a5 * ?Marker:Marker * ?Line:Line * ?Alignmentgroup:&#39;a6 * ?Offsetgroup:&#39;a7 * ?Box:Box * ?Bandwidth:&#39;a8 * ?Meanline:Meanline * ?Scalegroup:&#39;a9 * ?Scalemode:&#39;a10 * ?Side:&#39;a11 * ?Span:&#39;a12 * ?SpanMode:&#39;a13 * ?Uirevision:&#39;a14 -&gt; GenericChart.GenericChart<br />static member Chart.Violin : ?x:&#39;a * ?y:&#39;b * ?Name:string * ?Showlegend:bool * ?Color:string * ?Fillcolor:&#39;c * ?Opacity:float * ?Points:StyleParam.Boxpoints * ?Jitter:&#39;d * ?Pointpos:&#39;e * ?Orientation:StyleParam.Orientation * ?Width:&#39;f * ?Marker:Marker * ?Line:Line * ?Alignmentgroup:&#39;g * ?Offsetgroup:&#39;h * ?Box:Box * ?Bandwidth:&#39;i * ?Meanline:Meanline * ?Scalegroup:&#39;j * ?Scalemode:&#39;k * ?Side:&#39;l * ?Span:&#39;m * ?SpanMode:&#39;n * ?Uirevision:&#39;o -&gt; GenericChart.GenericChart</div>
 <div class="fsdocs-tip" id="fs8">module StyleParam<br /><br />from Plotly.NET</div>
 <div class="fsdocs-tip" id="fs9">type Jitterpoints = StyleParam.Boxpoints</div>
